@@ -8,6 +8,9 @@
 <meta property="og:title" content="Jahnavi Bonu">
 <meta property="og:description" content="Growth, product and go-to-market. PGP-TBM at Masters' Union, B.A. (Hons) Economics, University of Delhi.">
 <meta property="og:image" content="https://jahnavi-bonu.me/assets/jahnavi.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -30,7 +33,9 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2}
 
 nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
-nav .brand{font-family:Fraunces,serif;font-weight:600;font-size:18px;color:var(--ink)}
+nav .brand{font-family:Fraunces,serif;font-weight:600;font-size:18px;color:var(--ink);display:flex;align-items:center;gap:10px}
+nav .brand:hover{text-decoration:none}
+nav .brand img{width:36px;height:36px;border-radius:50%;display:block}
 nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
 nav ul a{color:var(--muted)}
 nav ul a:hover{color:var(--ink);text-decoration:none}
@@ -95,7 +100,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;font-size:13px;color:var(
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#">Jahnavi Bonu</a>
+    <a class="brand" href="#"><img src="assets/logo.png" alt="" width="36" height="36">Jahnavi Bonu</a>
     <ul>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
