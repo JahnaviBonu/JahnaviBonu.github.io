@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jahnavi Bonu</title>
+<meta name="description" content="Jahnavi Bonu — PGP in Technology & Business Management at Masters' Union. Growth, product and go-to-market.">
+<meta property="og:title" content="Jahnavi Bonu">
+<meta property="og:description" content="Growth, product and go-to-market. PGP-TBM at Masters' Union, B.A. (Hons) Economics, University of Delhi.">
+<meta property="og:image" content="https://jahnavi-bonu.me/assets/jahnavi.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f5; --surface:#ffffff; --ink:#1c1b19; --muted:#615d57; --line:#e6e1d9;
+  --accent:#2f5d50; --accent-soft:#e3ede9;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141413; --surface:#1d1c1a; --ink:#f0ede7; --muted:#a8a29a; --line:#2e2c29;
+         --accent:#7fb8a6; --accent-soft:#1f2c28; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2}
+
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .brand{font-family:Fraunces,serif;font-weight:600;font-size:18px;color:var(--ink)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+nav ul a:hover{color:var(--ink);text-decoration:none}
+
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center;padding:80px 0 72px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-size:clamp(40px,6vw,60px);margin-bottom:18px}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:34em;margin-bottom:28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{text-decoration:none;opacity:.88}
+.photo{border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:24px}
+.stat{background:var(--surface);padding:22px 20px}
+.stat b{display:block;font-family:Fraunces,serif;font-size:30px;font-weight:600;color:var(--accent)}
+.stat span{font-size:13.5px;color:var(--muted)}
+
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:30px;margin-bottom:32px}
+.item{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0}
+.item + .item{border-top:1px dashed var(--line)}
+.when{font-size:14px;color:var(--muted);padding-top:3px}
+.item h3{font-size:20px;margin-bottom:2px}
+.role{color:var(--muted);font-size:15px;margin-bottom:10px}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle;font-family:Inter,sans-serif}
+.item ul{padding-left:18px}
+.item li{margin:4px 0}
+.item li::marker{color:var(--accent)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card h3{font-size:17px;margin-bottom:4px}
+.card .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--muted)}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px}
+.skills h3{font-family:Inter,sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+
+.contact{text-align:center;padding:80px 0}
+.contact p{color:var(--muted);margin:0 auto 26px;max-width:30em}
+.contact .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:24px 0;font-size:13px;color:var(--muted);text-align:center}
+
+@media (max-width:760px){
+  nav ul{display:none}
+  .wrap{padding:0 16px}
+  .hero{grid-template-columns:1fr;gap:32px;padding:40px 0 48px}
+  .photo{order:-1;max-width:280px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .item{grid-template-columns:1fr;gap:4px}
+  .grid2{grid-template-columns:1fr}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Jahnavi Bonu</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Growth · Product · Go-to-market</div>
+      <h1>Hi, I'm Jahnavi.</h1>
+      <p class="lead">I'm doing a PGP in Technology &amp; Business Management at Masters' Union, after a B.A. (Hons) in Economics from the University of Delhi. I like using data to grow businesses: I've run performance marketing, built a Shopify store from scratch, and improved operations at an EdTech company.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:ylc27bonu.jahnavi@mastersunion.org">Get in touch</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/jahnavi-bonu" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="photo"><img src="assets/jahnavi.jpg" alt="Portrait of Jahnavi Bonu"></div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>3.2x</b><span>ROAS on Facebook Ads campaigns</span></div>
+    <div class="stat"><b>+40%</b><span>monthly revenue at Urban Swift</span></div>
+    <div class="stat"><b>150+</b><span>students advised at UpTop Careers</span></div>
+    <div class="stat"><b>₹20L+</b><span>in scholarships secured for students</span></div>
+  </div>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="item">
+      <div class="when">Jul 2025 – Sep 2025</div>
+      <div>
+        <h3>Urban Swift <span class="tag">Live project</span></h3>
+        <div class="role">Dropshipping of home utilities</div>
+        <ul>
+          <li>Launched and managed a Shopify store; A/B-tested pages and UI/UX lifted conversions by 35%</li>
+          <li>Ran Facebook Ads campaigns at 3.2x ROAS across several product categories</li>
+          <li>Used market and competitor research to find high-margin products, growing monthly revenue by 40%</li>
+          <li>Scaled the portfolio to 12+ SKUs and cut procurement costs by 27% by reworking the supplier network</li>
+          <li>Introduced data-driven pricing and dynamic discounts, raising average order value by 18%</li>
+          <li>Automated parts of fulfilment, cutting delivery lead times by 20%</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jul 2024 – Sep 2024<br>Gurugram</div>
+      <div>
+        <h3>UpTop Careers</h3>
+        <div class="role">Academic Counselor · EdTech platform for executive education with IIMs and top business schools</div>
+        <ul>
+          <li>Advised 150+ students with data-led plans, reaching 85% GPA targets and securing ₹20L+ in scholarships and aid</li>
+          <li>Built query frameworks for 500+ students and automated workflows, cutting response time by 60%</li>
+          <li>Streamlined core operations with leadership, reducing inefficiencies by 35% and raising satisfaction by 25%+</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Dec 2022 – Feb 2023<br>Remote</div>
+      <div>
+        <h3>Slytherin Solutions Pvt. Ltd. <span class="tag">Internship</span></h3>
+        <div class="role">Digital Marketing Intern · Digital marketing company</div>
+        <ul>
+          <li>Used SQL and Google Analytics to optimise funnels, lifting conversions ~20% and revenue by ₹5L+ a month</li>
+          <li>Ran SEO and funnel revamps that grew organic traffic by ~40%</li>
+          <li>Built KPI dashboards for reach, CTR and conversions, improving ROI by 30% and cutting reporting time by 40%</li>
+          <li>Coordinated cross-team workflows, speeding up campaign launches by 40%</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="item">
+      <div class="when">2025 – Present<br>Gurugram</div>
+      <div>
+        <h3>Masters' Union</h3>
+        <div class="role">PGP in Technology &amp; Business Management · Strategy, Marketing, Corporate Finance, Operations</div>
+        <ul><li>Core Member, ProdMan Club (selected 1 of 3 from 70+ applicants)</li></ul>
+      </div>
+    </div>
+    <div class="item">
+      <div class="when">2021 – 2025<br>New Delhi</div>
+      <div>
+        <h3>Dr. Bhim Rao Ambedkar College, University of Delhi</h3>
+        <div class="role">B.A. (Hons) Economics</div>
+        <ul><li>Joint Secretary, Department of Economics</li></ul>
+      </div>
+    </div>
+    <div class="item">
+      <div class="when">2017 – 2019<br>Visakhapatnam</div>
+      <div>
+        <h3>Sri Chaitanya Junior College</h3>
+        <ul>
+          <li>Class 12: 93.8% (top 3 percentile of 12 lakh+ students)</li>
+          <li>Class 10: 95% (top 2 percentile of 16 lakh+ students)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership &amp; Community</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>ProdMan Club, Masters' Union</h3>
+        <div class="meta">Core Member · 2025</div>
+        <p>Planned and ran 5+ product management bootcamps end to end, doubling engagement, and brought in external speakers for flagship PM initiatives.</p>
+      </div>
+      <div class="card">
+        <h3>Arthshala, Dept. of Economics, DU</h3>
+        <div class="meta">Joint Secretary · 2021</div>
+        <p>Led a fest with 200+ attendees from concept to delivery, owned budgeting and fund allocation, and improved budget efficiency by 20%+.</p>
+      </div>
+      <div class="card">
+        <h3>E-Cell, IIT Madras (Paradox)</h3>
+        <div class="meta">Organiser · 2022</div>
+        <p>Drove 600+ students to entrepreneurship events and hosted sessions with experts on IPOs, fundraising and scaling.</p>
+      </div>
+      <div class="card">
+        <h3>Animal Aid Unlimited, Udaipur</h3>
+        <div class="meta">Volunteer · 2023</div>
+        <p>Supported daily animal care and resource coordination, and helped grow community engagement with the NGO's programmes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills &amp; Certifications</h2>
+    <h3>Business</h3>
+    <div class="chips">
+      <span class="chip">Go-to-market</span><span class="chip">Consultative selling</span><span class="chip">Negotiation</span>
+      <span class="chip">Leadership</span><span class="chip">Scale &amp; operations</span><span class="chip">Statistics</span><span class="chip">Problem solving</span>
+    </div>
+    <h3>Tools</h3>
+    <div class="chips">
+      <span class="chip">SQL</span><span class="chip">Power BI</span><span class="chip">Google Analytics</span><span class="chip">Excel</span>
+      <span class="chip">Financial modelling</span><span class="chip">Figma</span><span class="chip">Notion</span><span class="chip">PowerPoint</span><span class="chip">Shopify</span>
+    </div>
+    <h3>Certifications</h3>
+    <div class="grid2">
+      <div class="card"><h3>Forward Program</h3><div class="meta">McKinsey &amp; Company · 2025</div></div>
+      <div class="card"><h3>Foundational Level in Programming &amp; Data Science</h3><div class="meta">IIT Madras · 2024</div></div>
+      <div class="card"><h3>NISM Series VIII – Equity Derivatives</h3><div class="meta">NISM · 2023</div></div>
+      <div class="card"><h3>Fundamentals of Data Analysis in Excel</h3><div class="meta">CFI · 2022</div></div>
+      <div class="card"><h3>Intro to ML, DL &amp; Computer Vision</h3><div class="meta">AI Club, IIT Madras · 2022</div></div>
+      <div class="card"><h3>Fundamentals of Digital Marketing</h3><div class="meta">Google · 2021</div></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's talk</h2>
+    <p>I'm open to roles and projects in growth, product and go-to-market. The quickest way to reach me is email or LinkedIn.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:ylc27bonu.jahnavi@mastersunion.org">ylc27bonu.jahnavi@mastersunion.org</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jahnavi-bonu" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Jahnavi Bonu</footer>
+</body>
+</html>
